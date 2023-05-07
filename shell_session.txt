@@ -1,0 +1,37 @@
+SHELL SESSIONS
+    * LOGIN SHELL
+        -> begins by authenticating user
+        -> e.g. signing into a terminal session
+        -> e.g. signing in thorugh SSH and authenticate
+        -> Config Read Order
+            1. /etc/profile
+            2. First of ~/.bash_profile:~/.bash_login:~/.profile
+    * NON-LOGIN SHEEL
+        -> shell session started from within and authenticated session
+        -> e.g. calling bash from the terminal
+        -> Config Read Order
+            1. /etc/bash.bashrc
+            2. First of ~/.bashrc
+    * INTERACTIVE SHELL
+        -> shell session attached to a terminal
+    * NON-INTERACTIVE SHELL
+        -> shell session not attacted to a terminal session
+        -> e.g. a script run from the command line
+        -> Read file specified in BASH_ENV variable 
+
+
+.bashrc
+    -> Executed for every new terminal window
+.bash_profile
+    -> Executed when user logs in
+.profile
+    -> Executed when user logs 
+    
+
+ARCH LINUX DEFAULT terminal
+    -> using linux built-in virtual console
+    -> built into the kernel 
+    -> terminfo name is 'linux'
+
+SYSTEM-WIDE SHELL STARTUPS
+    -> /etc/profile, /etc/profile.d/*.sh, /etc/bash.bashrc

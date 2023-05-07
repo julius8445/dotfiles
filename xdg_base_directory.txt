@@ -1,0 +1,34 @@
+XDG Base Directory Specification
+
+USER DIRECTORIES
+    * XDG_CONFIG_HOME
+        -> like /etc
+        -> location of user-specific config files
+        -> Default $HOME/.config
+    * XDG_CACHE_HOME
+        -> like /var/cache
+        -> user-specific non-essential data
+        -> DEFAULT $HOME/.cache
+    * XDG_STATE_HOME
+        -> state data the persists between application restarts
+        -> not important or portable enought to be in xdg_data_home
+        -> e.g. actions history( logs, history, recently used files)
+        -> e.g. current state of app that can be reused on a restart (view, layout, open files, undo history)
+    * XDG_DATA_HOME
+        -> usr/share
+        -> user-specific data files
+        -> $HOME/.local/share
+    * XDG_RUNTIME_DIR
+        -> non-essential user-specific data files
+        -> e.g. sockets, named pipes
+        -> no defualt value
+        -> owned by user (access mode 0700)
+        -> pam_systemd set this to /run/user/$UID
+    
+SYSTEM DIRECTORIES
+    * XDG_DATA_DIRS
+        -> directories seperated by :
+        -> default /usr/local/share:/usr/share
+    * XDG_CONFIG_DIRS
+        -> directories seperated by :
+        -> default /etc/xdg

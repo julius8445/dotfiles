@@ -1,0 +1,12 @@
+[user]
+    name = Nicklous Grant
+    email = nicklous.julian.grant@gmail.com
+
+[push]
+    default = current
+
+[init]
+    defaultBranch = main
+
+[alias]
+    co = checkout

@@ -1,0 +1,5 @@
+List Installed Packages
+    - pacman -Q
+
+Install Packman Package
+    - pacman -S <package_name>

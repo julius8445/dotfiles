@@ -1,0 +1,12 @@
+Display
+    * 
+Font
+    * Packages: ttf-firacode-nerd
+    * List Fonts
+        * fc-list | grep "<search-term>"
+    * Font Installation
+        * Single User: ~/.local/share/fonts
+        * System Wide: /usr/local/share/fonts
+        * Package Controlled (Don't Edit): /usr/share/fonts
+    * Update Font Cache
+        * fc-cache

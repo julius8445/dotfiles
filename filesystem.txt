@@ -1,0 +1,69 @@
+FHS
+    * /run
+        -> runtime data
+    * /boot
+        -> files needed to boot system
+        -> kernel resides here
+    * /proc
+        -> psuedo file system
+        -> created in memory(ram) dynamically by kernel
+        -> keeps track of running processes
+    * /var
+        -> files that change during operating system use
+        -> e.g. Logs, Cache
+    * /tmp
+        -> files that will be lost on reboot
+    * /dev
+        -> device files
+        -> can interface with hardware (drives) like they were files
+        -> e.g. interface with floppy drive, create disk partitions
+    * /home
+        -> user data
+    * /etc
+        -> ET CETERA
+        -> per machine settings
+        -> Editable Text Config
+        -> system config files of the storage system
+        -> log files
+        -> .conf
+        -> overriding distro shipped config files found in /usr/lib
+    * /bin
+        -> merged with /sbin in newer systems
+        -> binaries essential to operating system
+        -> binaries used in early boot stage
+        -> e.g. 'cat', 'ls'
+    * /sbin
+        -> system binaries
+        -> same as /bin but with root privileges required
+    * /lib
+        -> shared code used by /bin and /sbin
+    * /usr
+        -> User System Resources
+    * /usr/bin
+        -> non-essential
+        -> for the end-user
+        -> general system-wide binaries
+        -> mangaged by the distribution package manager
+    * /usr/sbin
+        -> general system-wide binaries that require root privileges
+        -> managed by the distribution package manager
+    * /usr/local
+        -> local data, specific to current host.
+        -> subdirectories: bin/ lib/ share/
+    * /usr/local/bin
+        -> normal user programs
+        -> system-wide avaliable scripts
+        -> not managed by distribution package manager
+        -> e.g. locally compiled packages
+    * /usr/local/sbin
+    * /usr/share
+        -> architecture independent sharable text files
+        -> /man : manual pages
+        -> /dict : spelling dictionary & indexes
+        -> /lib : data files such as terminfo, learn, tmac, me, macros
+        -> /lpp : optionally installable products
+    * ~/bin
+        -> user-scoped scripts
+    * $PATH
+        -> where to find executables
+        -> where <executable_name> : gives location of executable
