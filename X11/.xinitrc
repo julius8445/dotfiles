@@ -1,3 +1,3 @@
-exec i3
-
 nitrogen --restore &
+picom -f &
+exec i3

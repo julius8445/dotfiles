@@ -7,8 +7,8 @@ set $mod Mod4
 font pango:FiraCode Nerd Font Mono 8
 
 # gap 
-gaps inner 10px # space between windows
-gaps outer 10px # space along screen edge
+gaps inner 5px # space between windows
+gaps outer 5px # space along screen edge
 
 # border
 default_border pixel 3px

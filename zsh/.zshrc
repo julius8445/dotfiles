@@ -1,6 +1,7 @@
 ### ENVIRONMENT VARIABLES ###
-export PATH="$PATH:/usr/bin"
+#export PATH="$PATH"
 export EDITOR="helix"
+export VISUAL="helix"
 export READER="pdf/reader"
 export BROWSER="google-chrome-stable"
 export NOTEBOOK="$HOME/documents/notes"
@@ -8,6 +9,7 @@ export GITHUB_REPOS="$HOME/downloads/repos"
 
 
 ### ALIASES ###
+alias hx='helix'
 
 # Pacman 
 alias paci='sudo pacman -S'     # install one or more packages : paci <pkg1> <pkg2> ...
