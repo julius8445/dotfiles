@@ -1,11 +1,10 @@
 ### ENVIRONMENT VARIABLES ###
 export PATH="$PATH:/usr/bin"
-export EDITOR="path/to/editor"
-export BROWSER="path/to/browser"
-export TRUEBROWSER="path/to/browser"
+export EDITOR="helix"
 export READER="pdf/reader"
-export NOTEBOOK="$HOME/Documents/Notes"
-export GITHUB_REPOS="$HOME/Downloads/repos"
+export BROWSER="google-chrome-stable"
+export NOTEBOOK="$HOME/documents/notes"
+export GITHUB_REPOS="$HOME/downloads/repos"
 
 
 ### ALIASES ###

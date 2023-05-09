@@ -1,8 +1,17 @@
-# i3 Config File
+# i3 Config File 
 
-#   
 # mod key set to windows key
 set $mod Mod4
+
+# font
+font pango:FiraCode Nerd Font Mono 8
+
+# gap 
+gaps inner 10px # space between windows
+gaps outer 10px # space along screen edge
+
+# border
+default_border pixel 3px
 
 # reload config file
 bindsym $mod+Shift+c reload
@@ -36,8 +45,6 @@ bindsyn $mod+v split v # vertical orientation
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-
-
 
 
 # worspace navigation
