@@ -1,13 +1,3 @@
-### ENVIRONMENT VARIABLES ###
-#export PATH="$PATH"
-export EDITOR="helix"
-export VISUAL="helix"
-export READER="pdf/reader"
-export BROWSER="google-chrome-stable"
-export NOTEBOOK="$HOME/documents/notes"
-export GITHUB_REPOS="$HOME/downloads/repos"
-
-
 ### ALIASES ###
 alias hx='helix'
 
@@ -42,18 +32,15 @@ alias ls='exa -a           --color=always --group-directories-first'
 alias ll='exa       --long --color=always --group-directories-first'
 alias lt='exa -a -T        --color=always --group-directories-first'
 
-# String Manipulation
-alias trim="awk '{\$1=\$1:print}'"
-
 # Sourcing
-alias s='source ~/.zshrc'
+alias s='source ${DOTFILES}/zsh/.zshrc'
 
 # CAT -> BATCAT(BAT)
+# GREP -> RIPGREP
+# SED -> SD
 # cat --list-themes
 # cat --theme <theme_name> 
 #alias cat='batcat'
-#alias 
 
-# GREP -> RIPGREP
-# SED -> SD
-# PROCS
+
+eval "$(starship init zsh)"
