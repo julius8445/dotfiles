@@ -29,6 +29,7 @@ scrolling:
   history: 10000
   multiplier: 3
 
+
 # Colors (Nord)
 colors:
   # Default colors
