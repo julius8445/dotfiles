@@ -1,0 +1,14 @@
+networkmanager(nmtui)
+vim
+git
+neovim
+rustup
+	- rustup default stable
+	- cargo install leftwm
+alacritty
+zsh
+openssh
+picom
+nitrogen
+exa
+ripgrep

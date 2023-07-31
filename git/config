@@ -1,0 +1,12 @@
+[user]
+	email = nicklous.julian.grant@gmail.com
+	name = Nicklous J. Grant
+
+[gui]
+	editor = nvim
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = nvim
