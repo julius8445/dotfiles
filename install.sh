@@ -29,3 +29,10 @@ cp -rf "$HOME/dotfiles/fonts" "$HOME/.local/share"
 #############
 mkdir -p "$HOME/.config/alacritty"
 ln -sf "$HOME/dotfiles/alacritty" "$HOME/.config/alacritty"
+
+#########
+# helix #
+#########
+mkdir -p "$HOME/.config/helix"
+ln -sf "$HOME/dotfiles/helix/config.toml" "$HOME/.config/helix"
+ln -sf "$HOME/dotfiles/helix/languages.toml" "$HOME/.config/helix"

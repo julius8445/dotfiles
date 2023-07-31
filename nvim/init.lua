@@ -38,6 +38,8 @@ P.S. You can delete this when you're done too. It's your config now :)
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+require("core.keybindings")
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -139,13 +141,17 @@ require('lazy').setup({
   },
 
   {
+    'ellisonleao/gruvbox.nvim'
+  },
+
+  {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'gruvbox',
         component_separators = '|',
         section_separators = '',
       },
@@ -209,6 +215,8 @@ require('lazy').setup({
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
+vim.o.background = "dark"
+vim.cmd("colorscheme gruvbox")
 
 -- Set highlight on search
 vim.o.hlsearch = false
@@ -256,7 +264,6 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-vim.keymap.set('i', 'jk', '<Esc>')
 
 
 -- [[ Highlight on yank ]]
