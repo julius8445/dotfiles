@@ -18,8 +18,14 @@ mkdir -p "$HOME/.config/nvim"
 ln -sf "$HOME/dotfiles/nvim/init.lua" "$HOME/.config/nvim"
 ln -sf "$HOME/dotfiles/nvim/lua" "$HOME/.config/nvim"
 
+#########
+# fonts #
+#########
+mkdir -p "$HOME/.local/share"
+cp -rf "$HOME/dotfiles/fonts" "$HOME/.local/share"
+
 #############
 # alacritty #
 #############
 mkdir -p "$HOME/.config/alacritty"
-ln -sf "$HOME/dotfiles/alacritty/alacritty" "$HOME/.config/alacritty"
+ln -sf "$HOME/dotfiles/alacritty" "$HOME/.config/alacritty"
