@@ -1,0 +1,5 @@
+#! /bin/zsh
+alias hx="helix"
+alias ls="exa -l    --group-directories-first"
+alias la="exa -l -a --group-directories-first"
+

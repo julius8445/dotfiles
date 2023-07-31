@@ -13,3 +13,4 @@ nitrogen
 exa
 ripgrep
 helix
+zellij

@@ -1,17 +1,10 @@
 #import:
 #  - /path/to/alacritty.yml
 
-# Any items in the `env` entry below will be added as
-# environment variables. Some entries may override variables
-# set by alacritty itself.
-#env:
-  # TERM variable
-  #
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-  #TERM: alacritty
+live_config_reload: true
+
+env:
+  TERM: xterm-256color
 
 window:
   dimensions:
@@ -89,7 +82,7 @@ font:
     family: PragmataProMonoLiga Nerd Font
     style: Bold Italic
 
-  size: 18.0
+  size: 16.0
 
   offset:
     x: 0
@@ -351,7 +344,6 @@ draw_bold_text_with_bright_colors: false
   #thickness: 0.15
 
 # Live config reload (changes require restart)
-#live_config_reload: true
 
 # Shell
 #
@@ -359,13 +351,10 @@ draw_bold_text_with_bright_colors: false
 # `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
 # shell.
 #
-# Default:
-#   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
-#   - (Windows) powershell
-#shell:
-#  program: /bin/zsh
-#  args:
-#    - --login
+shell:
+  program: /bin/zsh
+  args:
+    - --login
 
 # Startup directory
 #

@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /bin/zsh
 
 picom &
 exec leftwm
+# exec i3
