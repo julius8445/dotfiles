@@ -1,5 +1,5 @@
 #! /bin/zsh
 
 picom &
-exec leftwm
-# exec i3
+# exec leftwm
+exec i3
