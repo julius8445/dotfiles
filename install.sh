@@ -3,6 +3,10 @@
 # X11
 ln -sf "$HOME/dotfiles/X11/xinitrc" "$HOME/.xinitrc"
 
+# polybar
+mkdir -p "$XDG_CONFIG_HOME/polybar"
+ln -sf "$DOTFILES/polybar/config.ini" "$XDG_CONFIG_HOME/polybar"
+
 # i3
 mkdir -p "$XDG_CONFIG_HOME/i3"
 ln -sf "$DOTFILES/i3/config" "$XDG_CONFIG_HOME/i3"
@@ -27,9 +31,9 @@ ln -sf "$HOME/dotfiles/helix/languages.toml" "$XDG_CONFIG_HOME/helix"
 
 # nvim
 mkdir -p "$XDG_CONFIG_HOME/nvim"
+ln -sf "$HOME/dotfiles/nvim/lua"      "$XDG_CONFIG_HOME/nvim"
 ln -sf "$HOME/dotfiles/nvim/init.lua" "$XDG_CONFIG_HOME/nvim"
-ln -sf "$HOME/dotfiles/nvim/lua" "$XDG_CONFIG_HOME/nvim"
 
 # fonts
 mkdir -p "$HOME/.local/share"
-cp -rf "$HOME/dotfiles/fonts" "$HOME/.local/share"
+cp -rf "$HOME/dotfiles/fonts" "$HOME/.local/share" 

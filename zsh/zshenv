@@ -23,3 +23,6 @@ export SAVEHIST=10000
 
 # PATH
 export PATH="$PATH:$HOME/.cargo/bin"
+
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$PATH:$BUN_INSTALL/bin"

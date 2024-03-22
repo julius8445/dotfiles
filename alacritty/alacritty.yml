@@ -1,6 +1,29 @@
 #import:
 #  - /path/to/alacritty.yml
 
+colors:
+  primary:
+    background: "0x282828"
+    foreground: "0xEBDBB2"
+  normal:
+    black:   "0x282828"
+    red:     "0xCC241D"
+    green:   "0x98971A"
+    yellow:  "0xD79921"
+    blue:    "0x458588"
+    magenta: "0xB16286"
+    cyan:    "0x689D6A"
+    white:   "0xA89984"
+  bright:
+    black:   "0x928374"
+    red:     "0xfb4934"
+    green:   "0xb8bb26"
+    yellow:  "0xfabd2f"
+    blue:    "0x83a598"
+    magenta: "0xd3869b"
+    cyan:    "0x8ec07c"
+    white:   "0xebdbb2"
+
 live_config_reload: true
 
 env:
@@ -66,21 +89,29 @@ scrolling:
   multiplier: 3
 
 font:
-  normal:
-   family: PragmataProMonoLiga Nerd Font
-   style: Regular
+  #normal:
+  # family: JetBrainsMono Nerd Font Mono
+  # style: Regular
 
-  bold:
-   family: PragmataProMonoLiga Nerd Font
-   style: Bold
+  #bold:
+  # family: JetBrainsMono Nerd Font Mono
+  # style: Bold
 
-  italic:
+  normal: 
     family: PragmataProMonoLiga Nerd Font
-    style: Italic
+    style: Regular
 
-  bold_italic:
+  bold: 
     family: PragmataProMonoLiga Nerd Font
-    style: Bold Italic
+    style: Bold
+
+  #italic:
+  #  family: PragmataProMonoLiga Nerd Font
+  #  style: Italic
+  #
+  #bold_italic:
+  #  family: PragmataProMonoLiga Nerd Font
+  #  style: Bold Italic
 
   size: 16.0
 
@@ -345,12 +376,6 @@ draw_bold_text_with_bright_colors: false
 
 # Live config reload (changes require restart)
 
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g.
-# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
-# shell.
-#
 shell:
   program: /bin/zsh
   args:

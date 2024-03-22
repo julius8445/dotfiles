@@ -1,5 +1,5 @@
 [user]
-	email = nicklous.julian.grant@gmail.com
+	email = nick.julian.grant@gmail.com
 	name = Nicklous J. Grant
 
 [gui]
@@ -10,3 +10,7 @@
 
 [core]
 	editor = nvim
+[color]
+	ui = auto
+[pull]
+	rebase = false
